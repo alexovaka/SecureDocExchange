@@ -1,0 +1,95 @@
+/* 🌙 Tmavý moderní styl */
+:root {
+    --primary-color: #4CAF50;
+    --background-color: #1e1e1e;
+    --text-color: #ffffff;
+    --card-bg: #292929;
+    --border-color: #4CAF50;
+    --button-hover: #45a049;
+}
+
+/* Reset + základní nastavení */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* 📝 Kontejner pro dokumenty */
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+/* 🔘 Tlačítka */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+/* 📜 Vstupní pole */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+/* 📜 Seznam dokumentů */
+.document-list {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.document-item {
+    background: #444;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.document-item:hover {
+    background: #555;
+    transform: scale(1.02);
+}
+
+/* 📱 Responzivní design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
