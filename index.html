@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Document Exchange</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Secure Document Exchange</h1>
+    
+    <button id="connectWallet">Připojit peněženku</button>
+    <p id="walletAddress"></p>
+
+    <h2>Nahrát dokument</h2>
+    <input type="text" id="docHash" placeholder="Hash dokumentu">
+    <input type="text" id="ipfsCID" placeholder="IPFS CID">
+    <button id="uploadDoc">Nahrát</button>
+
+    <h2>Spravovat přístup</h2>
+    <input type="text" id="accessDocHash" placeholder="Hash dokumentu">
+    <input type="text" id="userAddress" placeholder="Adresa uživatele">
+    <button id="grantAccess">Uděl grant</button>
+    <button id="revokeAccess">Odebrat přístup</button>
+
+    <h2>Získat informace o dokumentu</h2>
+    <input type="text" id="infoDocHash" placeholder="Hash dokumentu">
+    <button id="getDocInfo">Získat info</button>
+    <p id="docInfo"></p>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
